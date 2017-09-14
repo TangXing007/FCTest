@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/hui"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/back"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/include_title"/>
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/hui"/>
+        <LinearLayout
+            android:background="@drawable/select_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/head_portrait"
+            android:layout_width="match_parent"
+            android:layout_height="53dp">
+            <ImageView
+                android:src="@mipmap/person_image"
+                android:layout_marginLeft="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_weight="5"
+                android:text="头像"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <hml.come.fucheng.activity.CircleImageView
+                android:id="@+id/peson_data_image"
+                android:layout_weight="1.5"
+                android:gravity="right"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bj"/>
+
+        <LinearLayout
+            android:background="@drawable/select_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/pet_name"
+            android:layout_width="match_parent"
+            android:layout_height="53dp">
+            <ImageView
+                android:src="@mipmap/person_name"
+                android:layout_marginLeft="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:text="昵称"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="right"
+                android:id="@+id/pet_name_text"
+                android:layout_weight="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_weight="1.5"
+                android:gravity="right"
+                android:src="@mipmap/tit39"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bj"/>
+
+        <LinearLayout
+            android:background="@drawable/select_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/person_phone"
+            android:layout_width="match_parent"
+            android:layout_height="53dp">
+            <ImageView
+                android:src="@mipmap/person_phone"
+                android:layout_marginLeft="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:text="手机号码"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="right"
+                android:id="@+id/person_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:background="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/peson_data"
+            android:layout_width="match_parent"
+            android:layout_height="53dp">
+            <ImageView
+                android:src="@mipmap/pesorn"
+                android:layout_marginLeft="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:text="个人资料"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bj"/>
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/hui"/>
+        <LinearLayout
+            android:background="@drawable/select_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/intention_car"
+            android:layout_width="match_parent"
+            android:layout_height="53dp">
+            <ImageView
+                android:src="@mipmap/like_car"
+                android:layout_marginLeft="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:text="我的意向车型"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bj"/>
+
+        <LinearLayout
+            android:background="@drawable/select_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/alter_password"
+            android:layout_width="match_parent"
+            android:layout_height="53dp">
+            <ImageView
+                android:src="@mipmap/password"
+                android:layout_marginLeft="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:text="修改密码"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bj"/>
+
+        <LinearLayout
+            android:background="@drawable/select_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/service_clause"
+            android:layout_width="match_parent"
+            android:layout_height="53dp">
+            <ImageView
+                android:src="@mipmap/menu"
+                android:layout_marginLeft="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:text="服务条款"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bj"/>
+
+        <LinearLayout
+            android:background="@drawable/select_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/versions"
+            android:layout_width="match_parent"
+            android:layout_height="53dp">
+            <ImageView
+                android:layout_weight="0.1"
+                android:src="@mipmap/versions"
+                android:layout_marginLeft="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_weight="26"
+                android:layout_marginLeft="20dp"
+                android:text="版本号"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:textColor="@color/blue_h"
+                android:text="V1.0.0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bj"/>
+        <View
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/hui"/>
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/outlanding_button"
+            android:gravity="center"
+            android:textColor="@color/title"
+            android:text="退出登陆"
+            android:background="@drawable/select_bg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/hui"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/back"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:focusable="true"
+    android:background="@color/hui"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_title"/>
+    <LinearLayout
+        android:gravity="center"
+        android:background="@color/whrite"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="370dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:src="@mipmap/company_name_pic" />
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="12"
+                android:background="@null"
+                android:hint="姓名" />
+
+            <View
+                android:layout_marginRight="15dp"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/hui"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:src="@mipmap/id_number_pic"
+                android:layout_marginLeft="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="20dp"
+                />
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:hint="卡号"
+                android:id="@+id/add_bank_number"
+                android:background="@null"
+                android:layout_weight="12"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_marginRight="15dp"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/hui"/>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:src="@mipmap/person_name_pic"
+                android:layout_marginLeft="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="20dp"
+                />
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:hint="开户行"
+                android:id="@+id/add_bank_name"
+                android:background="@null"
+                android:layout_width="0dp"
+                android:layout_weight="12"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_marginRight="15dp"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/hui"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:src="@mipmap/bank_phone" />
+
+            <EditText
+                android:maxLength="11"
+                android:id="@+id/bank_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="12"
+                android:background="@null"
+                android:hint="银行预留手机号" />
+
+            <View
+                android:layout_marginRight="15dp"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/hui"/>
+        <LinearLayout
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/id_card_front"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/id_number_pic"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="20dp"
+                />
+            <TextView
+                android:textSize="17dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="银行卡正面 "
+                android:background="@null"
+                android:layout_width="0dp"
+                android:layout_weight="11"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/id_card_front_camera"
+                android:src="@mipmap/carmra_pic"
+                android:layout_marginRight="12dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/hui"/>
+        <LinearLayout
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/id_card_reserse"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:src="@mipmap/bunisse_pic"
+                android:layout_marginLeft="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="20dp"
+                />
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:text="银行卡反面"
+                android:textSize="17dp"
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/id_card_reserse_camera"
+                android:src="@mipmap/carmra_pic"
+                android:layout_marginRight="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/hui"/>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:src="@mipmap/company_adress_pic"
+                android:layout_marginLeft="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="20dp"
+                />
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:hint="公司地址"
+                android:id="@+id/company_adress"
+                android:background="@null"
+                android:layout_width="0dp"
+                android:layout_weight="12"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_marginRight="15dp"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+            </LinearLayout>
+    </LinearLayout>
+    <!--<LinearLayout
+        android:background="@color/whrite"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:text="开户行"
+            android:textColor="@color/whrite"
+            android:background="@color/blue_h"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/bank_class"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/whrite"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:text="开户行名称"
+            android:textColor="@color/whrite"
+            android:background="@color/blue_h"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/bank_name"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/whrite"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:text="开户行账号"
+            android:textColor="@color/whrite"
+            android:background="@color/blue_h"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/bank_number"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/whrite"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:text="法人姓名"
+            android:textColor="@color/whrite"
+            android:background="@color/blue_h"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/user_name"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/whrite"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:text="联系方式"
+            android:textColor="@color/whrite"
+            android:background="@color/blue_h"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/call_phone"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/whrite"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:text="公司地址"
+            android:textColor="@color/whrite"
+            android:background="@color/blue_h"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/company_adress"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent" />
+    </LinearLayout>-->
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/add_bank_card_button"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textColor="@color/whrite"
+        android:text="提交"
+        android:background="@drawable/button_border"
+        android:layout_width="300dp"
+        android:layout_height="50dp" />
+</LinearLayout>

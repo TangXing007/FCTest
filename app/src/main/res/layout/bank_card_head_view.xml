@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/huiXXX"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/add_bank_card"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/add"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_weight="8"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/Xhui"
+            android:text="添加银行卡"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_weight="1"
+            android:src="@mipmap/tit39"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@mipmap/land_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="120dp"
+            android:background="@drawable/jrbutton_select"
+            android:id="@+id/dealer_land"
+        android:layout_width="240dp"
+        android:layout_height="50dp">
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/whrite"
+            android:textSize="17dp"
+            android:text="经销商登陆"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/jrbutton_select"
+            android:id="@+id/resource_land"
+            android:layout_marginTop="44dp"
+            android:layout_width="240dp"
+            android:layout_height="50dp">
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/whrite"
+                android:textSize="17dp"
+                android:text="资源方登陆"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

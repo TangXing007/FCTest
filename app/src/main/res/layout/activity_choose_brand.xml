@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+<include layout="@layout/include_title"/>
+<LinearLayout
+android:background="@color/Xhui"
+android:layout_width="match_parent"
+android:layout_height="50dp">
+<LinearLayout
+    android:background="#FFFFFF"
+    android:layout_marginTop="7dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="35dp">
+    <ImageView
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/search"
+        android:layout_width="18dp"
+        android:layout_height="18dp" />
+    <EditText
+        android:id="@+id/brand_search_text"
+        android:layout_marginLeft="5dp"
+        android:background="@null"
+        android:hint="搜索品牌"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+</LinearLayout>
+<ListView
+android:divider="@null"
+android:id="@+id/choose_brand_list"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+</ListView>
+</LinearLayout>

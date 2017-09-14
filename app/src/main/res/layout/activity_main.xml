@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hml.come.fucheng.activity.MainActivity">
+    <hml.come.fucheng.custom.MainViewPage
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:id="@+id/home_viewPage">
+
+    </hml.come.fucheng.custom.MainViewPage>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/hui"/>
+
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:id="@+id/shouye"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:src="@mipmap/home"
+                    android:id="@+id/home_image"
+                    android:layout_width="22.5dp"
+                    android:layout_height="22.5dp"
+                    />
+            <TextView
+                android:textSize="10dp"
+                android:textColor="@color/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_text"
+                android:text="首页"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:id="@+id/land"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/land"
+                android:id="@+id/land_image"
+                android:layout_width="22.5dp"
+                android:layout_height="22.5dp" />
+            <TextView
+                android:textSize="10dp"
+                android:textColor="@color/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/land_text"
+                android:text="登陆"/>
+        </LinearLayout>
+
+        <LinearLayout
+        android:gravity="center_horizontal"
+        android:id="@+id/buy"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/buy"
+            android:id="@+id/buy_image"
+            android:layout_width="22.5dp"
+            android:layout_height="22.5dp" />
+        <TextView
+            android:textSize="10dp"
+            android:textColor="@color/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buy_text"
+            android:text="买车"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:id="@+id/myself"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/myself"
+                android:id="@+id/myself_image"
+                android:layout_width="22.5dp"
+                android:layout_height="22.5dp" />
+            <TextView
+                android:textSize="10dp"
+                android:textColor="@color/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/myself_text"
+                android:text="我的"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <LinearLayout
+            android:background="@drawable/select_bg"
+            android:id="@+id/brand1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/brand1_image"
+                android:layout_gravity="center"
+                android:layout_width="65dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:textSize="16dp"
+                android:textColor="@color/title"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/brand1_text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/select_bg"
+            android:id="@+id/brand2"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/brand2_image"
+                android:layout_width="65dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:textSize="16dp"
+                android:textColor="@color/title"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/brand2_text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/select_bg"
+            android:id="@+id/brand3"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/brand3_image"
+                android:layout_width="65dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:textSize="16dp"
+                android:textColor="@color/title"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/brand3_text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/select_bg"
+            android:id="@+id/brand4"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/brand4_iamge"
+                android:layout_width="65dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:textSize="16dp"
+                android:textColor="@color/title"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/brand4_text"/>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

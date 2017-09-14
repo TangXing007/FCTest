@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hml.come.fucheng">
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name=".appApplication.AppAplication"
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/NotitleTheme">
+        <activity android:name=".activity.HomePageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".activity.FuChengActivity"/>
+        <activity android:name=".activity.MenDianActivity"/>
+        <activity android:name=".activity.JinRongActivity"/>
+        <activity android:name=".activityFinancialChild.JInXiaoShangJinRong"/>
+        <activity android:name=".activityFinancialChild.RongZiActivity"/>
+        <activity android:name=".activityFinancialChild.BankActivity"/>
+        <activity android:name=".activity.CooperationActivity"/>
+        <activity android:name=".activity.ApplyForJoin"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.PriceActivity"/>
+        <activity android:name=".activity.LIstShowActivity"/>
+        <activity android:name=".activity.BiaoZhiActivity"/>
+        <activity android:name=".activity.LandingActivity"/>
+        <activity android:name=".activity.ZhuCeActivity"/>
+        <activity android:name=".activity.ForgetPasswordActivity"/>
+        <activity android:name=".activityMyselfChild.SettingActivity"/>
+        <activity android:name=".activityMyselfChild.PersonDataActivity"/>
+        <activity android:name=".activityMyselfChild.AmendActivity"/>
+        <activity android:name=".activityMyselfChild.IntentionCarActivity"/>
+        <activity android:name=".activityMyselfChild.AlterPasswordActivity"/>
+        <activity android:name=".activityMyselfChild.UserFeedbackActivity"/>
+        <activity android:name=".activityDealerChild.DealerActivity"/>
+        <activity android:name=".activityDealerChild.SalesManagementActivity"/>
+        <activity android:name=".activityDealerChild.MyMessageActivity"/>
+        <activity android:name=".activityDealerChild.DealerLandingActivity"/>
+        <activity android:name=".activity.GalleryActivity"/>
+        <activity android:name=".activityDealerChild.OnLineCarActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activityResourceChild.ResourceLandingActivity"/>
+        <activity android:name=".activityResourceChild.ResourceActivity"/>
+        <activity android:name=".activityDealerChild.AddBankCardActivity"/>
+        <activity android:name=".activityDealerChild.BankCardActivity"/>
+        <activity android:name=".activityDealerChild.ContractActivity"/>
+        <activity android:name=".activityDealerChild.SalesManagementListActivity"/>
+        <activity android:name=".activityResourceChild.MyOptionsActivity"/>
+        <activity android:name=".activityDealerChild.ContractManagementActivity"/>
+        <activity android:name=".activityDealerChild.ShowManagementActivity"/>
+        <activity android:name=".net_work.NoNetActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".activityDealerChild.ManagementMoreActivity"/>
+        <activity android:name=".activityDealerChild.ChooseBrandActivity"/>
+        <activity android:name=".activityDealerChild.ChooseCarsActivity"/>
+        <activity android:name=".activityResourceChild.ContractImageShow"/>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NotitleTheme"/>
+        <receiver android:name=".net_work.NetBroadcast">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

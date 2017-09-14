@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/car_list_name"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:clickable="false"
+            android:layout_marginRight="10dp"
+            android:id="@+id/car_list_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

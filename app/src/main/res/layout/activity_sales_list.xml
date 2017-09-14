@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_title"/>
+    <LinearLayout
+        android:gravity="center"
+        android:background="@color/Xhui"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        <LinearLayout
+            android:background="@drawable/search_border"
+            android:layout_width="345dp"
+            android:layout_height="45dp">
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/search"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+            <EditText
+                android:id="@+id/search_text"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:hint="搜索品牌/车系/车型"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/sales_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>

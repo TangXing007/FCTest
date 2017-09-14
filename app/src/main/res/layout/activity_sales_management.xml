@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/back"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_title"/>
+    <LinearLayout
+        android:id="@+id/sales_management_one"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/select_bg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/title"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="已发起"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/title"
+            android:id="@+id/sponsor"
+            android:layout_weight="5"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@mipmap/tit39"
+            android:layout_weight="1"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bj"/>
+    <LinearLayout
+        android:id="@+id/sales_management_two"
+        android:gravity="center_vertical"
+        android:background="@drawable/select_bg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/title"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="已初审"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/title"
+            android:id="@+id/first_trial"
+            android:layout_weight="5"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@mipmap/tit39"
+            android:layout_weight="1"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bj"/>
+    <LinearLayout
+        android:id="@+id/sales_management_three"
+        android:gravity="center_vertical"
+        android:background="@drawable/select_bg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/title"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="已终审"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/title"
+            android:id="@+id/last_instance"
+            android:layout_weight="5"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@mipmap/tit39"
+            android:layout_weight="1"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bj"/>
+    <LinearLayout
+        android:id="@+id/sales_management_four"
+        android:gravity="center_vertical"
+        android:background="@drawable/select_bg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/title"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="已放款"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/title"
+            android:id="@+id/make_loans"
+            android:layout_weight="5"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@mipmap/tit39"
+            android:layout_weight="1"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bj"/>
+    <LinearLayout
+        android:id="@+id/sales_management_five"
+        android:gravity="center_vertical"
+        android:background="@drawable/select_bg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/title"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="已汇款"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/title"
+            android:id="@+id/remittance"
+            android:layout_weight="5"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@mipmap/tit39"
+            android:layout_weight="1"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bj"/>
+    <LinearLayout
+        android:id="@+id/sales_management_six"
+        android:gravity="center_vertical"
+        android:background="@drawable/select_bg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/title"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="已回款"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/title"
+            android:id="@+id/returned_money"
+            android:layout_weight="5"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@mipmap/tit39"
+            android:layout_weight="1"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bj"/>
+    <LinearLayout
+        android:id="@+id/sales_management_seven"
+        android:gravity="center_vertical"
+        android:background="@drawable/select_bg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/title"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="已拒绝"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/title"
+            android:id="@+id/refuse"
+            android:layout_weight="5"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@mipmap/tit39"
+            android:layout_weight="1"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    </LinearLayout>
+</LinearLayout>

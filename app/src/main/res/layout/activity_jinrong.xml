@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_title"/>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@mipmap/money"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="63dp"
+                android:background="@drawable/jrbutton_select"
+                android:gravity="center"
+                android:id="@+id/financial_button1"
+                android:text="经销商金融"
+                android:textSize="17dp"
+                android:textColor="@color/whrite"
+                android:layout_width="240dp"
+                android:layout_height="50dp" />
+        <TextView
+            android:background="@drawable/jrbutton_select"
+            android:gravity="center"
+            android:id="@+id/financial_button2"
+            android:text="融资租赁"
+            android:textSize="17dp"
+            android:textColor="@color/whrite"
+            android:layout_marginTop="28dp"
+            android:layout_width="240dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:background="@drawable/jrbutton_select"
+            android:gravity="center"
+            android:id="@+id/financial_button3"
+            android:text="银行按揭"
+            android:textSize="17dp"
+            android:textColor="@color/whrite"
+            android:layout_marginTop="28dp"
+            android:layout_width="240dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</LinearLayout>

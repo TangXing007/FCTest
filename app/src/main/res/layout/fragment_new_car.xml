@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back">
+    <ListView
+        android:scrollbars="none"
+        android:fadeScrollbars="false"
+        android:background="#FFFFFF"
+        android:id="@+id/new_car_parent_listview"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+    <ListView
+        android:background="@null"
+        android:divider="@null"
+        android:id="@+id/search_list"
+        android:layout_width="14dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</RelativeLayout>

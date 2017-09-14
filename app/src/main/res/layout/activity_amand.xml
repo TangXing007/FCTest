@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/hui"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_title"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <EditText
+            android:maxLength="6"
+            android:layout_gravity="center"
+            android:id="@+id/amand_text"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"></EditText>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/amand_button"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/button_border2"
+        android:textColor="@color/whrite"
+        android:text="保存"
+        android:layout_width="300dp"
+        android:layout_height="50dp" />
+</LinearLayout>
